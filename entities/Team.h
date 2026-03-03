@@ -13,7 +13,7 @@ class Team
         Team(string name, string coachName, int ranking);
 
     public:
-        ~Team();
+        virtual ~Team();
 
         virtual void Train();
         virtual void PlayMatch();
