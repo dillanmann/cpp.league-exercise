@@ -11,6 +11,7 @@
                 "entities/Team.cpp",
                 "entities/FootballTeam.cpp",
                 "entities/BasketballTeam.cpp",
+                "entities/League.cpp",
                 "-o",
                 "main.out"
             ],

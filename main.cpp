@@ -4,29 +4,31 @@
 #include "entities/Team.h"
 #include "entities/FootballTeam.h"
 #include "entities/BasketballTeam.h"
+#include "entities/League.h"
 
 using namespace std;
 
-void CreateAndUseFootballTeam() {
+Team* CreateAndUseFootballTeam() {
     cout << "Creating a football team\n";
     FootballTeam* myFootballTeam = new FootballTeam("The A Team", "John Doe", 1, "4-4-2");
-    myFootballTeam -> WriteToStdout();
-    myFootballTeam -> Train();
-    myFootballTeam -> PlayMatch();
-    delete myFootballTeam;
+    return myFootballTeam;
 }
 
-void CreateAndUseBasketballTeam() {
+Team* CreateBasketballTeam() {
     cout << "Creating a basketball team\n";
     BasketballTeam* myBasketballTeam = new BasketballTeam("The B Team", "Jane Smith", 2, "Indoor");
-    myBasketballTeam -> WriteToStdout();
-    myBasketballTeam -> Train();
-    myBasketballTeam -> PlayMatch();
-    delete myBasketballTeam;
+    return myBasketballTeam;
 }
 
 int main() {
-    CreateAndUseFootballTeam();
-    CreateAndUseBasketballTeam();
+    Team* footballTeam = CreateAndUseFootballTeam();
+    Team* basketballTeam = CreateBasketballTeam();
+
+    League* league = new League();
+    league->AddTeam(footballTeam);
+    league->AddTeam(basketballTeam);
+
+    delete league;
+
     return 0;
 }
