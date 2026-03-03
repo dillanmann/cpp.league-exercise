@@ -16,6 +16,16 @@ FootballTeam::~FootballTeam()
     cout << "FootballTeam destructor called\n";
 }
 
+void FootballTeam::Train()
+{
+    cout << name << " is training with formation " << formation << ".\n";
+}
+
+void FootballTeam::PlayMatch()
+{
+    cout << name << " is playing a match with formation " << formation << ".\n";
+}
+
 void FootballTeam::WriteToStdout()
 {
     Team::WriteToStdout();

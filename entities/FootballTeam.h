@@ -11,11 +11,13 @@ class FootballTeam : public Team
 {
     private:
         string formation;
-        
+
     public:
         FootballTeam(string name, string coachName, int ranking, string formation);
         ~FootballTeam();
 
+        void Train() override;
+        void PlayMatch() override;
         void WriteToStdout() override;
 };
 
