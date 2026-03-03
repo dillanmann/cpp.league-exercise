@@ -11,7 +11,7 @@ class Team
         int ranking;
 
     public:
-        Team();
+        Team(string name, string coachName, int ranking);
         ~Team();
         void WriteToStdout();
 };

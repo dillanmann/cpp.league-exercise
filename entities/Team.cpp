@@ -4,12 +4,12 @@
 
 using namespace std;
 
-Team::Team()
+Team::Team(string name, string coachName, int ranking)
 {
     std::cout << "Team constructor called\n";
-    name = "Default Team";
-    coachName = "Default Coach";
-    ranking = 0;
+    this->name = name;
+    this->coachName = coachName;
+    this->ranking = ranking;
 }
 
 Team::~Team()
