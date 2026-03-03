@@ -5,18 +5,19 @@ using namespace std;
 
 class Team
 {
-    private:
+    protected:
         string name;
         string coachName;
         int ranking;
 
-    public:
         Team(string name, string coachName, int ranking);
+
+    public:
         ~Team();
 
-        void Train();
-        void PlayMatch();
-        void WriteToStdout();
+        virtual void Train();
+        virtual void PlayMatch();
+        virtual void WriteToStdout();
 };
 
 #endif

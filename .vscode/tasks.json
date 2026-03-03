@@ -9,6 +9,7 @@
                 "-g",
                 "main.cpp",
                 "entities/Team.cpp",
+                "entities/FootballTeam.cpp",
                 "-o",
                 "main.out"
             ],
