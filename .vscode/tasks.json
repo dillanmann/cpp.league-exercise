@@ -10,6 +10,7 @@
                 "main.cpp",
                 "entities/Team.cpp",
                 "entities/FootballTeam.cpp",
+                "entities/BasketballTeam.cpp",
                 "-o",
                 "main.out"
             ],
