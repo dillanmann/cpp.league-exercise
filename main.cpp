@@ -3,11 +3,16 @@
 
 using namespace std;
 
+class Team
+{
+    public:
+        Team() {
+            cout << "Team constructor called\n";
+        }
+};
+
 int main() {
-    cout << "Hello World\n";
-    cout << "Input: ";
-    string data;
-    getline(cin, data);
-    cout << "Output: " << data << "\n\n";
+    cout << "I'm making a team\n";
+    Team myTeam;
     return 0;
 }
