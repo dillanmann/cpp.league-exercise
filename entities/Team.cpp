@@ -17,6 +17,16 @@ Team::~Team()
     std::cout << "Team destructor called\n";
 }
 
+void Team::Train()
+{
+    cout << name << " is training.\n";
+}
+
+void Team::PlayMatch()
+{
+    cout << name << " is playing a match.\n";
+}
+
 void Team::WriteToStdout()
 {
     cout << "Team Name: " << name << endl;

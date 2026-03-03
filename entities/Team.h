@@ -13,6 +13,9 @@ class Team
     public:
         Team(string name, string coachName, int ranking);
         ~Team();
+
+        void Train();
+        void PlayMatch();
         void WriteToStdout();
 };
 
