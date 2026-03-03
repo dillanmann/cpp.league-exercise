@@ -4,7 +4,14 @@
         {
             "label": "Build Main",
             "type": "shell",
-            "command": "g++ -g main.cpp -o main.out",
+            "command": "g++",
+            "args": [
+                "-g",
+                "main.cpp",
+                "entities/Team.cpp",
+                "-o",
+                "main.out"
+            ],
             "group": {
                 "kind": "build",
                 "isDefault": true
