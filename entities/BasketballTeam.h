@@ -16,6 +16,8 @@ class BasketballTeam : public Team
         BasketballTeam(string name, string coachName, int ranking, string courtType);
         ~BasketballTeam();
 
+        void Train() override;
+        void PlayMatch() override;
         void WriteToStdout() override;
 };
 
